@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="background">
+        <img src="/blur-radial.svg" alt="blur radial" />
+        <img src="/blur-radial.svg" alt="blur radial" />
+      </div>
+
+      <form id="form1">
+        <h2>Register</h2>
+        <label for="name"
+          >Name
+          <input type="text" id="name" placeholder="enter your name" />
+        </label>
+        <label for="email"
+          >Email
+          <input type="email" id="email" placeholder="example@gmail.com" />
+        </label>
+        <button type="button" class="btn-continue" onclick="gotoForm2()">Continue</button>
+      </form>
+
+      <form id="form2">
+        <h2>Which topics you are interested in?</h2>
+        <span>Software Development</span>
+        <span>User Experience</span>
+        <span>Graphic Design</span>
+        <button type="button" class="btn-continue" onclick="gotoForm3()">Continue</button>
+      </form>
+
+      <form id="form3">
+        <h2>Summary</h2>
+        <div></div>
+        <button type="button" class="btn-continue">Confirm</button>
+      </form>
+
+      <div class="form-page">
+        <h6>Step 1 of 3</h6>
+        <div class="selected"></div>
+        <div></div>
+        <div></div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
